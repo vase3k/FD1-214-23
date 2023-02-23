@@ -16,8 +16,10 @@
             vertical-align: top;
         }
 
-        p,
-        li {
+        p.italic,
+        li,
+        fieldset
+        {
             font-style: italic;
         }
 
@@ -28,7 +30,7 @@
 </head>
 
 <body>
-    <P>Рекомендации к выполнению работы:</P>
+    <P class="italic">Рекомендации к выполнению работы:</P>
     <ul>
         <li>Все эти формы размещены в таблице, шириной 700px, 4 строки х 2 столбца</li>
         <li>Каждая форма должна правильно заполненные атрибуты name, method и action.</li>
@@ -38,7 +40,7 @@
     <table width="700">
         <tr>
             <th>
-                <p class="normal">Простая форма поиска с вариантами:</p>
+                <p>Простая форма поиска с вариантами:</p>
                 <form action="http://fe.it-academy.by/TestForm.php" method="post" name="form1">
                     <fieldset>
                         <legend>Строка поиска</legend>
