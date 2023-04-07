@@ -1,42 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cards</title>
     <style>
-        div {
-            width: 142px; height: 190px;
+        [class*="card"] {
+            width: 142px;
+            height: 190px;
             float: left;
         }
+
         .card1 {
             background: url(cards.png) top left no-repeat;
             background-position: -0px -1593px;
         }
+
         .card2 {
             background: url(cards.png) top left no-repeat;
-            background-position: -431px  -1793px;
+            background-position: -431px -1793px;
         }
+
         .card3 {
             background: url(cards.png) top left no-repeat;
-            background-position: -286px  -1395px;
+            background-position: -286px -1395px;
         }
+
         .card4 {
             background: url(cards.png) top left no-repeat;
             background-position: -142px -2189px;
         }
+
         .card5 {
             background: url(cards.png) top left no-repeat;
-            background-position: -285px  -2389px;
+            background-position: -285px -2389px;
+        }
+
+        .rows1 {
+            background: url(cards.png) no-repeat top left;
+            background-position-x: 111px;
+            background-position-y: -2386px;
+            width: 540px;
+            height: 200px;
+        }
+
+        .rows2 {
+            background: url(cards.png) no-repeat top left;
+            background-position-x: -133px;
+            background-position-y: -2187px;
+            width: 400px;
+            height: 200px;
+        }
+
+        .rows3 {
+            background: url(cards.png) no-repeat top left;
+            background-position-x: -90px;
+            background-position-y: -1391px;
+            width: 300px;
+            height: 200px;
+        }
+
+        .rows4 {
+            background: url(cards.png) no-repeat top left;
+            background-position-x: 99px;
+            background-position-y: -1789px;
+            width: 200px;
+            height: 200px;
+        }
+
+        .rows5 {
+            background: url(cards.png) no-repeat top left;
+            background-position-x: -433px;
+            background-position-y: -1590px;
+            width: 100px;
+            height: 200px;
+        }
+        .clear {
+            clear: both;
         }
     </style>
 </head>
+
 <body>
     <div class="card1"></div>
     <div class="card2"></div>
     <div class="card3"></div>
     <div class="card4"></div>
     <div class="card5"></div>
+    <div class="clear"></div>
+    <div class="rows1">
+        <div class="rows2">
+            <div class="rows3">
+                <div class="rows4">
+                    <div class="rows5">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
