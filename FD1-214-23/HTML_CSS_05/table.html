@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        table,
+        tr,
+        th {
+            border: 0px solid black;
+            border-collapse: collapse;
+            font-family: sans-serif;
+        }
+
+        tr:nth-child(2) th:first-child {
+            background: khaki;
+            width: 150px;
+            vertical-align: top;
+        }
+
+        tr:first-child,
+        tr:nth-child(3) {
+            background: lightblue;
+        }
+
+        tr:nth-child(2) th:nth-child(2) {
+            background: url(ball_img.jpeg) top right repeat-y;
+            vertical-align: top;
+        }
+
+        img {
+            float: left;
+            padding: 15px;
+        }
+
+        h3 {
+            text-align: left;
+            margin-left: 10px;
+        }
+
+        ul {
+            margin-left: -10px;
+            text-align: left;
+            font-weight: lighter;
+        }
+
+        p {
+            text-align: left;
+            padding: 0px 15px;
+            font-weight: lighter;
+        }
+
+        h2 {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th colspan="2">
+                <h2>ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!</h2>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <h3>Виды спорта: </h3>
+                <ul>
+                    <li><a href="https://music.yandex.ru/home">конькобежный спорт</a></li>
+                    <li><a href="https://www.21vek.by/">биатлон</a></li>
+                    <li><a href="https://www.relax.by/">стрельба из лука</a></li>
+                    <li><a href="https://www.google.ca/">прыжки в длину</a></li>
+                    <li><a href="https://www.schoolsw3.com/css/index.php">прыжки в высоту</a></li>
+                    <li><a href="https://validator.w3.org/#validate_by_uri">фигурное катание</a></li>
+                    <li><a href="https://img2txt.com/ru">синхронное плавание</a></li>
+                    <li><a href="https://tinypng.com/">шахматы</a></li>
+                </ul>
+            </th>
+            <th>
+                <h1>ФУТБОЛ</h1>
+                <img src="Football_img.jpeg" alt="фотография футбольной команды">
+                <p>Футбол — командный вид спорта, в котором
+                    целью является забить мяч в ворота
+                    соперника ногами или другими частями тела
+                    (кроме рук) большее количество раз, чем
+                    команда соперника.</p>
+                <p>Есть 17 официальных правил игры, каждое из
+                    которых содержит список оговорок и
+                    руководящих принципов. Эти правила
+                    предназначены для применения на всех уровнях футбола, хотя есть
+                    некоторые изменения для таких групп, как юниоры, взрослые, женщины и
+                    люди с ограниченными физическими возможностями. Законы очень часто
+                    формупировались в общих чертах, которые позволяют упростить их
+                    применения в зависимости от характера игры</p>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="2">
+                <h2>ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!</h2>
+            </th>
+        </tr>
+    </table>
+</body>
+
+</html>
