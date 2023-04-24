@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        /* метод 1 */
+        .method1>div {
+            display: inline-block;
+            padding: 15px 9px;
+            font: 25px sans-serif;
+        }
+    
+        .method1>:not(:last-child) {
+            border-right: solid red 5px;
+        }
+    
+        /* метод 2 */
+        .method2>div {
+            float: left;
+            font: 25px sans-serif;
+        }
+    
+        .method2>div>a>p {
+            margin: 15px 10px;
+            display: inline;
+        }
+    
+        .method2>div>a>div {
+            width: 5px;
+            height: 60px;
+            background: red;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    
+        .method2>div:last-child>a>div {
+            visibility: hidden;
+        }
+    
+        .method3 {
+            clear: both;
+            font: 25px sans-serif;
+        }
+    
+        .method3>div {
+            float: left;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+    
+        .method3 img {
+            margin-bottom: -30px;
+            margin-left: 10px;
+            height: 60px;
+            width: 5px;
+        }
+    
+        .method3>div:last-of-type>a>img {
+            opacity: 0;
+        }
+    
+        /* method 4 */
+        .method4>table {
+            height: 60px;
+            margin: 80px 0;
+            border-collapse: collapse;
+        }
+    
+        .method4>table tr>th {
+            font: normal 25px sans-serif;
+            border-right: 5px red solid;
+            padding: 0 10px;
+        }
+    
+        .method4>table tr>th:last-child {
+            border-right: 0px;
+        }
+    
+        [class*="method"] a:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="method1">
+        <div><a href="http://fe.it-academy.by/Materials/HTMLCSS_V12/HTMLCSS_6.html#ANCHOR15" target="_blank">
+                <p>первая ссылка</p>
+            </a></div>
+        <div><a href="http://fe.it-academy.by/Materials/HTMLCSS_V12/HTMLCSS_6.html#ANCHOR15" target="_blank">
+                <p>вторая ссылка</p>
+            </a></div>
+        <div><a href="http://fe.it-academy.by/Materials/HTMLCSS_V12/HTMLCSS_6.html#ANCHOR15" target="_blank">
+                <p>третья ссылка</p>
+            </a></div>
+        <div><a href="http://fe.it-academy.by/Materials/HTMLCSS_V12/HTMLCSS_6.html#ANCHOR15" target="_blank">
+                <p>четвёртая ссылка</p>
+            </a></div>
+        <div><a href="http://fe.it-academy.by/Materials/HTMLCSS_V12/HTMLCSS_6.html#ANCHOR15" target="_blank">
+                <p>пятая ссылка</p>
+            </a></div>
+    </div>
+    <br>
+    <div class="method2">
+        <div><a href="http://fe.it-academy.by/Materials/HTMLCSS_V12/HTMLCSS_6.html#ANCHOR15" target="_blank">
+                <p>первая ссылка</p><div></div>
+            </a></div>
+        <div><a href="http://fe.it-academy.by/Materials/HTMLCSS_V12/HTMLCSS_6.html#ANCHOR15" target="_blank">
+                <p>вторая ссылка</p><div></div>
+            </a></div>
+        <div><a href="http://fe.it-academy.by/Materials/HTMLCSS_V12/HTMLCSS_6.html#ANCHOR15" target="_blank">
+                <p>третья ссылка</p><div></div>
+            </a></div>
+        <div><a href="http://fe.it-academy.by/Materials/HTMLCSS_V12/HTMLCSS_6.html#ANCHOR15" target="_blank">
+                <p>четвёртая ссылка</p><div></div>
+            </a></div>
+        <div><a href="http://fe.it-academy.by/Materials/HTMLCSS_V12/HTMLCSS_6.html#ANCHOR15" target="_blank">
+                <p>пятая ссылка</p><div></div>
+            </a></div>
+    </div>
+    <div class="method3">
+        <div><a href="http://fe.it-academy.by/Materials/HTMLCSS_V12/HTMLCSS_6.html#ANCHOR15" target="_blank">
+                <span>первая ссылка</span><img src="bar.gif" alt="красная палка">
+            </a></div>
+        <div><a href="http://fe.it-academy.by/Materials/HTMLCSS_V12/HTMLCSS_6.html#ANCHOR15" target="_blank">
+                <span>вторая ссылка</span><img src="bar.gif" alt="красная палка">
+            </a></div>
+        <div><a href="http://fe.it-academy.by/Materials/HTMLCSS_V12/HTMLCSS_6.html#ANCHOR15" target="_blank">
+                <span>третья ссылка</span><img src="bar.gif" alt="красная палка">
+            </a></div>
+        <div><a href="http://fe.it-academy.by/Materials/HTMLCSS_V12/HTMLCSS_6.html#ANCHOR15" target="_blank">
+                <span>четвёртая ссылка</span><img src="bar.gif" alt="красная палка">
+            </a></div>
+        <div><a href="http://fe.it-academy.by/Materials/HTMLCSS_V12/HTMLCSS_6.html#ANCHOR15" target="_blank">
+                <span>пятая ссылка</span><img src="bar.gif" alt="красная палка">
+            </a></div>
+    </div>
+    <div class="method4">
+        <table>
+            <tr>
+                <th><a href="http://fe.it-academy.by/Materials/HTMLCSS_V12/HTMLCSS_6.html#ANCHOR15" target="_blank">
+                        <p>первая ссылка</p>
+                </th>
+                <th><a href="http://fe.it-academy.by/Materials/HTMLCSS_V12/HTMLCSS_6.html#ANCHOR15" target="_blank">
+                        <p>вторая ссылка</p>
+                </th>
+                <th><a href="http://fe.it-academy.by/Materials/HTMLCSS_V12/HTMLCSS_6.html#ANCHOR15" target="_blank">
+                        <p>третья ссылка</p>
+                </th>
+                <th><a href="http://fe.it-academy.by/Materials/HTMLCSS_V12/HTMLCSS_6.html#ANCHOR15" target="_blank">
+                        <p>четвёртая ссылка</p>
+                </th>
+                <th><a href="http://fe.it-academy.by/Materials/HTMLCSS_V12/HTMLCSS_6.html#ANCHOR15" target="_blank">
+                        <p>пятая ссылка</p>
+                </th>
+            </tr>
+        </table>
+    </div>
+    <div class="method5"></div>
+</body>
+
+</html>
