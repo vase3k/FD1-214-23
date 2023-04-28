@@ -47,6 +47,7 @@
             visibility: hidden;
         }
     
+        /* method 3 */
         .method3 {
             clear: both;
             font: 25px sans-serif;
@@ -72,7 +73,7 @@
         /* method 4 */
         .method4>table {
             height: 60px;
-            margin: 80px 0;
+            margin: 80px 0 20px 0;
             border-collapse: collapse;
         }
     
@@ -84,6 +85,20 @@
     
         .method4>table tr>th:last-child {
             border-right: 0px;
+        }
+    
+        /* method5 */
+        .method5>div {
+            float: left;
+            font: normal 25px sans-serif;
+            margin-left: 10px;
+        }
+    
+        .method5>div>span {
+            float: right;
+            font-size: 45px;
+            color: red;
+            margin: 0px -7px;
         }
     
         [class*="method"] a:hover {
@@ -150,23 +165,44 @@
             <tr>
                 <th><a href="http://fe.it-academy.by/Materials/HTMLCSS_V12/HTMLCSS_6.html#ANCHOR15" target="_blank">
                         <p>первая ссылка</p>
+                    </a>
                 </th>
                 <th><a href="http://fe.it-academy.by/Materials/HTMLCSS_V12/HTMLCSS_6.html#ANCHOR15" target="_blank">
                         <p>вторая ссылка</p>
+                    </a>
                 </th>
                 <th><a href="http://fe.it-academy.by/Materials/HTMLCSS_V12/HTMLCSS_6.html#ANCHOR15" target="_blank">
                         <p>третья ссылка</p>
+                    </a>
                 </th>
                 <th><a href="http://fe.it-academy.by/Materials/HTMLCSS_V12/HTMLCSS_6.html#ANCHOR15" target="_blank">
                         <p>четвёртая ссылка</p>
+                    </a>
                 </th>
                 <th><a href="http://fe.it-academy.by/Materials/HTMLCSS_V12/HTMLCSS_6.html#ANCHOR15" target="_blank">
                         <p>пятая ссылка</p>
+                    </a>
                 </th>
             </tr>
         </table>
     </div>
-    <div class="method5"></div>
+    <div class="method5">
+        <div><a href="http://fe.it-academy.by/Materials/HTMLCSS_V12/HTMLCSS_6.html#ANCHOR15" target="_blank">
+                <span>первая ссылка</span>
+            </a><span>&#9130;</span></div>
+        <div><a href="http://fe.it-academy.by/Materials/HTMLCSS_V12/HTMLCSS_6.html#ANCHOR15" target="_blank">
+                <span>вторая ссылка</span>
+            </a><span>&#9130;</span></div>
+        <div><a href="http://fe.it-academy.by/Materials/HTMLCSS_V12/HTMLCSS_6.html#ANCHOR15" target="_blank">
+                <span>третья ссылка</span>
+            </a><span>&#9130;</span></div>
+        <div><a href="http://fe.it-academy.by/Materials/HTMLCSS_V12/HTMLCSS_6.html#ANCHOR15" target="_blank">
+                <span>четвёртая ссылка</span>
+            </a><span>&#9130;</span></div>
+        <div><a href="http://fe.it-academy.by/Materials/HTMLCSS_V12/HTMLCSS_6.html#ANCHOR15" target="_blank">
+                <span>пятая ссылка</span>
+            </a></div>
+    </div>
 </body>
 
 </html>
