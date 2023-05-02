@@ -4,14 +4,7 @@
 }
 .header > div {
     width: 1400px;
-}
-.header > div {
     margin: auto;
-    width: 1140px;
-}
-
-.header > div > div:first-child {
-    float: left;
 }
 
 .header > div > div:last-child {
@@ -19,18 +12,19 @@
 }
 
 .header > div > div > ul > li {
-    font: normal 400 14px/16px roboto,  sans-serif;
     color:#FFFFFF;
-    display: inline-block;
     padding: 20px;
+    float: left;
 }
 
-.header > div > div:last-child > ul > li:nth-child(1)::before{
-    content: url(phone.svg);
+.header > div > div:last-child > ul > li:nth-child(1) {
+    background: url(Img/phone.png) no-repeat center left;
+    padding-left: 30px;
 }
 
-.header > div > div:last-child > ul > li:nth-child(2)::before {
-    content: url(delivery-icon.svg);
+.header > div > div:last-child > ul > li:nth-child(2) {
+    background: url(Img/phone.png) no-repeat center left;
+    padding-left: 30px;
 }
 
 .clearfix::after {
