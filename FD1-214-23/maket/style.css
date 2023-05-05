@@ -3,7 +3,7 @@
     font: 400 14px/16px roboto, sans-serif;
 }
 .header > div {
-    width: 1400px;
+    width: 1140px;
     margin: auto;
 }
 
@@ -27,6 +27,27 @@
     padding-left: 30px;
 }
 
+.main_body{
+    width: 1140px;
+    margin: 0 auto;
+}
+.main_body > div:first-child {
+    text-align: center;
+    background: url(Img/LOGO.png) left center / 9% no-repeat,
+                url(Img/wishlist-icon.png) right 72px center no-repeat,
+                url(img/bag.png) right 37px center no-repeat,
+                url(img/оповещение.png) right 37px top 14px no-repeat,
+                url(img/profile-icon.png) right center no-repeat;
+    margin-top: 20px;
+}
+
+.main_body > div:first-child > form > input {
+    height: 50px;
+    width: 839px;
+    padding-left: 69px;
+    background: url(img/search-icon.png) left 15px center no-repeat;
+    border: 1px solid #E6E6E6;
+}
 .clearfix::after {
     content: "";
     display: block;
