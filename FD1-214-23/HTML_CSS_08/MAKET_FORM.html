@@ -7,8 +7,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAKET_FORM</title>
     <style>
-        span {
-            display: inline-block;
+        @media screen and (max-width:3840px) {
+            span {
+                display: inline-block;
+                margin: 2px 0px;
+            }
+
+            [type=text] {
+                position: absolute;
+                right: 10px;
+                left: 190px;
+            }
+
+            select {
+                position: absolute;
+                left: 190px;
+            }
+
+            textarea {
+                position: absolute;
+                right: 10px;
+                left: 8px;
+            }
+
+            .none {
+                display: none;
+            }   
+        }
+
+        @media screen and (max-width:450px) {
+            span {
+                display: inline-block;
+                margin: 2px 0px;
+            }
+
+            [type=text] {
+                position: absolute;
+                right: 10px;
+                left: 8px;
+            }
+            
+            select {
+                position: absolute;
+                left: 8px;
+            }
+
+            textarea {
+                position: absolute;
+                right: 10px;
+                left: 8px;
+            }
+                .none {
+                display: initial;
+            } 
         }
     </style>
 </head>
@@ -16,26 +67,26 @@
 <body>
     <form action="http://fe.it-academy.by/TestForm.php" method="get" target="_blank">
         <p>Для публикации вашей статьи, заполните пожалуйста следующую форму:</p>
-        <label><span>Название статьи:</span>
+        <label><span>Название статьи:</span> <br class="none">
             <input type="text" name="article" maxlength="20"></label><br>
-        <label><span>Рубрика:</span>
+        <label><span>Рубрика:</span> <br class="none">
             <select name="topic">
                 <option value="компьютерная техника">компьютерная техника</option>
                 <option value="графика и дизайн">графика и дизайн</option>
                 <option value="программирование">программирование</option>
             </select><br>
         </label>
-        <span>Публикация:</span>
-        <input type="radio" name="pub" value="1">на сайте
-        <input type="radio" name="pub" value="2">в журнале
+        <span>Публикация:</span> <br class="none">
+        <input type="radio" name="pub" value="1">на сайте <br class="none">
+        <input type="radio" name="pub" value="2">в журнале <br class="none">
         <input type="radio" name="pub" value="3">на сайте и в журнале<br>
         <label>
             <span>Разрешить комментарии:</span>
             <input type="checkbox" name="comment" value="yes"><br></label>
         <label>
-            <span>Текст статьи:</span><br>
-            <textarea name="text_topic"></textarea><br></label>
-        <input type="submit" value="опубликовать">
+            <span>Текст статьи:</span> <br>
+            <textarea name="text_topic"></textarea><br></label><br>
+        <input type="submit" value="Опубликовать">
     </form>
 </body>
 
