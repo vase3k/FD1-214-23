@@ -8,14 +8,14 @@
     <title>Домашка</title>
     <link rel="stylesheet" href="FD1-214-23/HTML_CSS_03/fonts/styles.css">
     <style>
-        a,
-        span {
+        a {
             font: 20px/25px 'pt sans', sans-serif;
             color: aliceblue;
         }
 
-        a {
-            text-decoration: solid transparent;
+        span {
+            font: 20px/25px 'pt sans', sans-serif;
+            color: black;
         }
 
         a:hover {
@@ -28,10 +28,9 @@
             background:
                 url(FD1-214-23/HTML_CSS_01/iron_man_typing.jpg) no-repeat 290px top,
                 url(FD1-214-23/HTML_CSS_01/ironman_from_Belarus.jpg) no-repeat 290px bottom red;
+                counter-reset: number;
         }
-        div {
-            counter-reset: number;
-        }
+
         h1::after{
             counter-increment: number;
             content: " " counter(number);

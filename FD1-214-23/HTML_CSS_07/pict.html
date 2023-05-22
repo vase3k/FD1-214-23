@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pict</title>
+    <style>
+        p {
+            font: italic 25px/25px sans-serif;
+        }
+        picture {
+            display: table;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        Тэг picture нужен для адаптива, чтоб используя медиа условия типо ширины экрана, менять картинки, 
+        с более тяжёлых до более лёгких для например мобильных телефонов. 
+        Ну или с более сложных до более простых.
+    </p>
+    <picture>
+        <source media="(min-width:1240px)" srcset="img/titanic_1.jpg">
+        <source media="(min-width:800px )" srcset="img/titanic_2.jpg">
+        <img src="img/titanic_3.gif" alt="просто титаник" style="width:400px">
+    </picture>
+</body>
+
+</html>
