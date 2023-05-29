@@ -1,0 +1,160 @@
+.container {
+    width: 1512px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.header {
+    background: url(../IMG/main_image.png) no-repeat top center;
+    background-size: cover;
+    overflow: hidden;
+}
+.header > div:nth-child(2) {
+    width: 1512px;
+    margin: 0 auto;
+}
+.header > div:nth-child(2) > h1 {
+    margin-top: 294px;
+}
+.header > div:nth-child(2) > input {
+    margin-top: 56px;
+}
+.header > div:nth-child(2) > p {
+    margin-top: 56px;
+}
+.container > div:first-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 390px;
+}
+.container > div:first-child > h1 {
+    font-family: 'Evolventa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 37.0312px;
+    line-height: 170%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.container > div:first-child > p {
+    font-family: 'Evolventa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    width: 114px;
+}
+.container > div:nth-child(2) {
+    width: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+}
+.container > div:nth-child(2) > span {
+    font-family: 'Evolventa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+.container > div:nth-child(3) > h1,
+.container > div:nth-child(4) > h1 {
+    font-family: 'Evolventa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.container > div:nth-child(3) > p,
+.container > div:nth-child(4) > p {
+    font-family: 'Evolventa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 155%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+.header div:nth-child(2) > h1 {
+    font-family: 'Evolventa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.container > div:nth-child(5) > input,
+.header > div:nth-child(2) > input{
+    height: 59px;
+    width: 294px;
+    border-radius: 10px;
+    padding: 15px 30px 16px 30px;
+    font-family: 'Evolventa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 155%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-top: 33px;
+}
+.container > div:nth-child(5) > img,
+.header > div:nth-child(2) > img 
+ {
+    position: relative;
+    right: 55px;
+}
+.header > div:nth-child(2) > p {
+    font-family: 'Evolventa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 75px;
+}
+.title_advantages {
+    height: 576px;
+    width: 1815px;
+    background: #FFFFFF;
+    margin: 0 auto;
+}
+.title_advantages > p {
+    font-family: 'Evolventa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+    color: #000000;
+    padding: 100px;
+}
+.advantages {
+    width: 1615px;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+.advantages > div {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content:space-between;
+    width: 479px;
+}
