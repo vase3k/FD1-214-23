@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8.45c Формы в HTML5 — радиокнопки для «показать больше»</title>
+    <style>
+        .SReadMoreRadio {
+            display: none;
+        }
+        .SReadMoreRadio + label + div {
+            display: none;
+        }
+        .SReadMoreRadio:checked + label + div {
+            display: block;
+        }
+        .SReadMoreRadio + label {
+            text-decoration: underline;
+            cursor:pointer;
+        }
+        .SReadMoreRadio:checked + label {
+            display: none;
+        }
+        .SReadMoreRadio + label + div + input + label{
+            display: none;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .SReadMoreRadio:checked + label + div + input + label {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            Однажды в студёную зимнюю пору<br />
+            Я из лесу вышел &mdash; был сильный мороз!
+        </div>
+
+        <input type="radio" class="SReadMoreRadio" name="poem" id="POEM1" value="1">
+        <label for="POEM1">показать больше</label>
+
+        <div>
+            Гляжу &mdash; поднимается медленно в гору<br />
+            Лошадка, везущая хворосту воз.
+        </div>
+
+        <input type="radio" class="SReadMoreRadio" name="poem" id="POEM2" checked value="2">
+        <label for="POEM2">скрыть</label>
+    </div>
+</body>
+</html>

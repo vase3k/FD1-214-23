@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8.45a Формы в HTML5 — стилизация чекбокса</title>
+    <style>
+        .checkbox {
+            visibility: hidden;
+        }
+        .checkbox::before {
+            visibility: visible;
+            content: url(profile-icon.png);
+            position: relative;
+            top: -0.5em;
+        }
+        .checkbox:checked::before {
+            content: url(bag.png);
+        }
+        .checkbox + span {
+            color: red;
+        }
+        .checkbox:checked + span {
+            color: green;
+        }
+            
+    </style>
+</head>
+<body>
+    <label>
+        <input type="checkbox" class="checkbox" checked>
+        <span>Щёлкни меня!</span>
+    </label>
+</body>
+</html>
