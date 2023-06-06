@@ -48,12 +48,12 @@ body {
   line-height: 1.2;
   font-weight: normal;
   color: #102746;
-  ;
 }
 
 img {
   max-width: 100%;
   height: auto;
+  vertical-align: bottom;
 }
 
 /* header styles start*/
@@ -135,6 +135,7 @@ img {
   background: url(../img/intro_bg.jpg) no-repeat center;
   background-size: cover;
   padding-top: 263px;
+  padding-bottom: 223px;
 }
 
 .intro_title {
@@ -283,6 +284,10 @@ background: url(../img/svg/arrow_right_icon.svg) no-repeat right center;
 
 /* places start */
 
+.places {
+  margin-bottom: 131px;
+}
+
 .places_caption {
   display: flex;
   flex-wrap: wrap;
@@ -319,6 +324,7 @@ background: url(../img/svg/arrow_right_icon.svg) no-repeat right center;
 .places_card {
   position: relative;
   overflow: hidden;
+  box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
 }
 
 .places_card::after{
