@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprites</title>
+    <style>
+        .box2 {
+            background: url('mario.png') left top no-repeat;
+            width: 650px;
+            height: 270px;
+            position: relative;
+            top: 10px;
+        }
+
+        @keyframes MarioAnimation
+        {
+            from {background: url('mario.png') 0 0;}
+            to {background: url('mario.png') 650px 0;}
+        }
+
+        .box_animation {
+            width: 50px;
+            height: 50px;
+            animation: MarioAnimation 1.4s steps(13) infinite;
+            scale: 4;
+            position: relative;
+            left: 75px;
+            top: 75px;
+        }
+        p {
+            font: 900 25px / 30px monospace;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <p>Оригинал спрайта</p>
+    <div class="box2">
+    </div>
+    <p>Ну и анимация</p>
+    <div class="box_animation">
+    </div>
+</body>
+</html>
