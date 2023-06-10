@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a if</title>
+</head>
+<body>
+    <script>
+
+        var name = prompt('Фамилия', 'Виноградов');
+        var surname = prompt('Имя', 'Василий');
+        var middle_name = prompt('Отчество', 'Викторович');
+        var age = parseInt(prompt('Your age', '35'));
+
+        alert(
+            'Ваше ФИО: ' + name + ' ' + surname + ' ' + middle_name + '\n' +
+            'Ваш возраст в годах: ' + age + ' лет' + '\n' +
+            'Ваш возраст в днях: ' + (age * 365 + ' дней') + '\n' +
+            'Через 5 лет вам будет ' + (age + 5 + ' лет') + '\n'
+        );
+
+        var sex = confirm('ваш пол мужской?');
+
+        if (sex == true) {
+            if (age >= 70) {
+                alert('вы мужчина на пенсии');
+            }
+            else {
+                alert('вы мужчина не на пенсии');
+            }
+        }
+        else {
+            if (age >= 65) {
+                alert('вы женщина на пенсии');
+            }
+            else {
+                alert('вы женщина не на пенсии');
+            }
+        }
+
+    </script>
+</body>
+</html>
