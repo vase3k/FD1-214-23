@@ -23,4 +23,3 @@ function GetResult() {
         case "*": console.log(x * y); break;
     };
 }
-
