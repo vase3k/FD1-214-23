@@ -1157,3 +1157,146 @@ a {
 }
 
 /* footer end */
+
+@media all and (max-width:375px) {
+    .wrapper {
+        width: 375px;
+    }
+
+    .header_wrapper {
+        width: 375px;
+    }
+    
+    .header_middle {
+        display: none;
+    }
+    .header_border_bottom {
+        width: auto;
+    }
+
+    .intro_wrapper {
+        width: 375px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 85px;
+        flex-wrap: wrap;
+    }
+
+    .intro_right_hero_img img {
+        width: 375px;
+        position: relative;
+        top: 0;
+        right: -40px;
+    }
+
+    .stats_wrapper {
+        background: url(../img/stats_wrapper_bg.jpg) repeat top center;
+        height: 360px;
+        width: 375px;
+        overflow: hidden;
+        padding: 0 249px;
+        margin-bottom: 103px;
+    }
+
+    .stat_wrapper_container {
+        margin: 57px auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        justify-content: center;
+    }
+
+    .app_wrapper {
+        margin: 0 81px 0 97px;
+        display: flex;
+        flex-direction: column;
+        width: 375px;
+    }
+
+    .app_side_text {
+        margin-left: 0;
+    }
+
+    .app_mobile_screen {
+        margin: 16px 0 101px;
+    }
+
+    .top_restaurants_wrapper_title {
+        text-align: left;
+    }
+
+    .top_restaurants_wrapper {
+        max-width: 375px;
+    }
+    .top_restaurants_cards {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .top_diches_wrapper_title {
+        text-align: left;
+    }
+
+    .top_diches_wrapper {
+        max-width: 375px;
+    }
+
+    .top_diches_cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+    .control_dashboard_cards {
+        margin-bottom: 30px;
+    }
+
+    .subscribe_wrapper {
+        width: 375px;
+    }
+
+    .subscribe_wrap {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .subscribe_left_email_wrap {
+        width: 375px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .subscribe_right_block {
+        bottom: -220px;
+        top: auto;
+    }
+
+    .subscribe_left_email_wrap {
+        position: relative;
+        right: 37px;
+    }
+
+    .footer {
+        max-width: 375px;
+    }
+    
+    .footer_wrapper {
+        max-width: 375px;
+    }
+
+    .footer_wrap_top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_right {
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+/* media start */
+
