@@ -23,6 +23,18 @@ a {
 
 /*header start*/
 
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.header_active {
+    background-color: #5c4eaf75;
+}
+
 .header_wrapper {
     width: 1248px;
     margin: 0 auto;
@@ -125,17 +137,25 @@ a {
 }
 
 .header_border_bottom {
-
     height: 1px;
     border-bottom: 2px solid rgba(203, 203, 203, 0.65);
     width: 1248px;
     margin: 25px auto 49px;
 }
 
+.header_burger {
+    display: none;
+    width: 31px;
+    height: 2px;
+}
+
 /* header end */
 
 /* intro start */
 
+.main {
+    margin-top: 186px;
+}
 .intro_wrapper {
     width: 1248px;
     margin: 0 auto;
@@ -1158,145 +1178,63 @@ a {
 
 /* footer end */
 
-@media all and (max-width:375px) {
-    .wrapper {
-        width: 375px;
-    }
-
-    .header_wrapper {
-        width: 375px;
-    }
-    
-    .header_middle {
-        display: none;
-    }
-    .header_border_bottom {
-        width: auto;
-    }
-
-    .intro_wrapper {
-        width: 375px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-bottom: 85px;
-        flex-wrap: wrap;
-    }
-
-    .intro_right_hero_img img {
-        width: 375px;
-        position: relative;
-        top: 0;
-        right: -40px;
-    }
-
-    .stats_wrapper {
-        background: url(../img/stats_wrapper_bg.jpg) repeat top center;
-        height: 360px;
-        width: 375px;
-        overflow: hidden;
-        padding: 0 249px;
-        margin-bottom: 103px;
-    }
-
-    .stat_wrapper_container {
-        margin: 57px auto;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        justify-content: center;
-    }
-
-    .app_wrapper {
-        margin: 0 81px 0 97px;
-        display: flex;
-        flex-direction: column;
-        width: 375px;
-    }
-
-    .app_side_text {
-        margin-left: 0;
-    }
-
-    .app_mobile_screen {
-        margin: 16px 0 101px;
-    }
-
-    .top_restaurants_wrapper_title {
-        text-align: left;
-    }
-
-    .top_restaurants_wrapper {
-        max-width: 375px;
-    }
-    .top_restaurants_cards {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: auto;
-    }
-
-    .top_diches_wrapper_title {
-        text-align: left;
-    }
-
-    .top_diches_wrapper {
-        max-width: 375px;
-    }
-
-    .top_diches_cards {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-    }
-    .control_dashboard_cards {
-        margin-bottom: 30px;
-    }
-
-    .subscribe_wrapper {
-        width: 375px;
-    }
-
-    .subscribe_wrap {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        flex-wrap: wrap;
-        align-content: flex-start;
-    }
-
-    .subscribe_left_email_wrap {
-        width: 375px;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-    .subscribe_right_block {
-        bottom: -220px;
-        top: auto;
-    }
-
-    .subscribe_left_email_wrap {
-        position: relative;
-        right: 37px;
-    }
-
-    .footer {
-        max-width: 375px;
-    }
-    
-    .footer_wrapper {
-        max-width: 375px;
-    }
-
-    .footer_wrap_top {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer_right {
-        width: 100%;
-        justify-content: space-around;
-    }
-}
-
 /* media start */
 
+@media screen and (max-width:375px) {
+
+    /* header start */
+
+    .header_burger {
+        display: block;
+    }
+
+    .header_middle {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-left: 0;
+        background-color: #030314;
+        display: block;
+        font-size: 48px;
+        padding: 40px 100px;
+        transform: translateY(100%);
+    }
+
+    .header_middle > span {
+        display: block;
+        margin-top: 30px;
+    }
+
+    .header_nav-close {
+        display: block;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 2;
+    }
+
+    .header_nav-close-line {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .header_nav-close-line:first-child {
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    .header_nav-close-line:last-child {
+        transform: translateY(-50%) rotate(-45deg);
+    }
+ /*    video 7 21:38 */
+
+    /*  header end */
+}
