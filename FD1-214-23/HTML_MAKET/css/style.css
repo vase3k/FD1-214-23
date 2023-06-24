@@ -1,15 +1,6 @@
-html {
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
-.selector-for-some-widget {
-    box-sizing: content-box;
+* {
+    padding: 0;
+    margin: 0;
 }
 
 a {
@@ -17,7 +8,7 @@ a {
 }
 
 .wrapper {
-    width: 1440px;
+    max-width: 1248px;
     margin: 0 auto;
 }
 
@@ -36,8 +27,6 @@ a {
 }
 
 .header_wrapper {
-    width: 1248px;
-    margin: 0 auto;
     margin-top: 48px;
     display: flex;
     flex-wrap: wrap;
@@ -155,10 +144,10 @@ a {
 
 .main {
     margin-top: 186px;
+    width: 100%;
 }
+
 .intro_wrapper {
-    width: 1248px;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -167,6 +156,7 @@ a {
 
 .intro_left {
     margin-top: 70px;
+    max-width: 568px;
 }
 
 .intro_left_title {
@@ -267,11 +257,15 @@ a {
     opacity: .65;
 }
 
-.intro_right_hero_img img {
-    width: 680.48px;
+.intro_right{
     position: relative;
     top: 0;
     right: -40px;
+    margin-top: 70px;
+}
+
+.intro_right img{
+    width: 100%;
 }
 
 /* intro end */
@@ -280,20 +274,18 @@ a {
 
 .stats_wrapper {
     background: url(../img/stats_wrapper_bg.jpg) no-repeat top center;
-    height: 220px;
-    overflow: hidden;
-    padding: 0 249px;
     margin-bottom: 103px;
+    padding: 34px 177px;
 }
 
 .stat_wrapper_container {
-    margin: 57px auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.stat_wrapper_container>div {
+.stat_wrapper_container > div {
     text-align: center;
+    min-width: 233px;
 }
 
 .stats_title {
@@ -303,8 +295,6 @@ a {
     font-size: 43.2px;
     line-height: 54px;
     color: #FFFFFF;
-    margin-top: 8px;
-    margin-bottom: 10px;
 }
 
 .stats_desc {
@@ -317,7 +307,6 @@ a {
 }
 
 .stats_block02 {
-    width: 338px;
     border-left: 1px solid rgba(197, 197, 197, .15);
     border-right: 1px solid rgba(197, 197, 197, .15);
 }
@@ -327,7 +316,7 @@ a {
 /* app start */
 
 .app_wrapper {
-    margin: 0 81px 0 97px;
+    margin: 0 81px 100px 97px;
     display: flex;
     flex-direction: row;
 }
@@ -411,17 +400,12 @@ a {
 
 .app_wrapper_border_bottom {
     border-bottom: 2px solid rgba(203, 203, 203, 0.65);
-    margin: 0 100px 97px;
+    margin-bottom: 100px;
 }
 
 /* app end */
 
 /* top restaurants start */
-
-.top_restaurants_wrapper {
-    width: 1248px;
-    margin: 0 auto;
-}
 
 .top_restaurants_wrapper_title {
     font-family: 'Poppins';
@@ -446,8 +430,8 @@ a {
 }
 
 .top_restaurant_card {
+    min-width: 396px;
     border-radius: 30px 30px 30px 30px;
-    height: 297.6px;
     overflow: hidden;
     border: 1.44px solid #F4F4F6;
     box-shadow: 6.8px 82.1px 41px 0px #E5E5E5B2;
@@ -536,11 +520,6 @@ a {
 /* top restaurants end */
 
 /* top top_diches start */
-
-.top_diches_wrapper {
-    width: 1248px;
-    margin: 0 auto;
-}
 
 .top_diches_wrapper_title {
     font-family: 'Poppins';
@@ -702,8 +681,6 @@ a {
 /* control purchases start */
 
 .control_wrapper {
-    max-width: 1250px;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -742,7 +719,6 @@ a {
     border-radius: 12.0408px;
     box-shadow: 0px 20.068px 30.102px rgba(70, 70, 70, 0.1);
     width: 345px;
-    height: 88px;
     background: url(../img/top_diches_card_01.jpg) no-repeat left 17px center / 77px;
     border: 1.44px solid #F4F4F6;
     background-color: #FFFFFF;
@@ -931,8 +907,6 @@ a {
 /* customer say start */
 
 .reviews_wrapper {
-    max-width: 1250px;
-    margin: 0 auto;
     margin-bottom: 182px;
 }
 
@@ -1026,8 +1000,6 @@ a {
 /* subscribe start */
 
 .subscribe_wrapper {
-    width: 1214px;
-    margin: 0 auto;
     margin-bottom: 216px;
 }
 .subscribe_wrap {
@@ -1067,6 +1039,7 @@ a {
     letter-spacing: 0.488px;
     text-transform: capitalize;
     margin-left: 21px;
+    margin-bottom: 0;
 }
 
 .subscribe_right_wrap {
@@ -1095,7 +1068,7 @@ a {
 
 .subscribe_right_block {
     position: absolute;
-    top: 63px;
+    top: 108px;
     right: 72px;
 }
 
@@ -1104,15 +1077,10 @@ a {
 /* footer start */
 
 .footer {
-    width: 1440px;
+    width: 100%;
     background: #EAEAEA;
     margin: 0 auto;
     overflow: hidden;
-}
-
-.footer_wrapper {
-    width: 1246px;
-    margin: 0 auto;
 }
 
 .footer_left_text {
@@ -1180,61 +1148,88 @@ a {
 
 /* media start */
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:900px) {
+    .wrapper {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 
-    /* header start */
+    .intro_wrapper {
+        flex-direction: column;
+    }
 
-    .header_burger {
+    .intro_right {
+        position: inherit;
+    }
+
+    .stats_wrapper {
+      background-color: #5C4EAE;
+    }
+
+    .stat_wrapper_container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .stats_block02 {
+        border: 0;
+        border-top: 1px solid rgba(197, 197, 197, .15);
+        border-bottom: 1px solid rgba(197, 197, 197, .15);
+    }   
+
+    .stats_wrapper {
+        padding: 34px 42px;
+    }
+
+    .stat_wrapper_container div {
+        padding: 40px 0;
+    }
+
+    .app_wrapper {
+        margin: 0;
+        margin-bottom: 100px;
         display: block;
     }
 
-    .header_middle {
+    .app_side_text {
+        margin: 0;
+    }
+
+    .top_restaurants_cards {
+        grid-template-columns: repeat(1, 396px );
+        grid-template-rows: repeat(3, 1fr);
+        margin-left: 100px;
+    }
+
+    .top_diches_cards {
+        grid-template-columns: repeat(2, 225px );
+        grid-template-rows: repeat(3, 1fr);
+        margin-left: 100px;
+    }
+
+    .top_diches_card {
+       max-width: 225px;
+    }
+
+    .control_dashboard {
+        margin-bottom: 40px;
+    }
+
+    .subscribe_wrap {
+        height: 400px;
+    }
+
+    .subscribe_right_block {
+        right: initial;
+        top: 275px;
+        left: 242px;
+    }
+
+    .subscribe_left_email_wrap {
         width: 100%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        margin-left: 0;
-        background-color: #030314;
-        display: block;
-        font-size: 48px;
-        padding: 40px 100px;
-        transform: translateY(100%);
     }
-
-    .header_middle > span {
-        display: block;
-        margin-top: 30px;
+    .subscribe_right_wrap_text {
+        margin: 0;
     }
-
-    .header_nav-close {
-        display: block;
-        width: 40px;
-        height: 40px;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        z-index: 2;
-    }
-
-    .header_nav-close-line {
-        display: block;
-        width: 100%;
-        height: 2px;
-        background-color: white;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    .header_nav-close-line:first-child {
-        transform: translateY(-50%) rotate(45deg);
-    }
-
-    .header_nav-close-line:last-child {
-        transform: translateY(-50%) rotate(-45deg);
-    }
- /*    video 7 21:38 */
-
-    /*  header end */
+ 
 }
