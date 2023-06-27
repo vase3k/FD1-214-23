@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eatly menu</title>
+    <meta name="description" content="" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/style_map.css">
+    <link rel="stylesheet" href="css/style_fonts.css">
+</head>
+
+<body>
+    <!--header start-->
+    <!-- https://www.figma.com/file/jHDVsiVR8JBpkMsYehKCEj/Eatly?type=design&node-id=1-11265&t=WB0XBAdDpl2xkEdo-0 -->
+    <header class="header">
+        <div class="wrapper">
+            <div class="header_wrapper">
+                <div class="header_left">
+                    <div class="header_logo">
+                        <img src="img/svg/header_left_logo.svg" alt="eatly_logo" class="header_left_thumb">
+                    </div>
+                    <span class="header_left_title">eatly</span>
+                    <div class="header_middle">
+                        <span><a href="index.html" class="js-scroll">home</a></span>
+                        <span><a href="menu.html" class="js-scroll">Menu</a></span>
+                        <span><a href="#map" class="js-scroll">Map</a></span>
+                        <span><a href="#review" class="js-scroll">Review</a></span>
+                    </div>
+                </div>
+                <div class="header_right">
+                    <span class="header_right_login"><a href="#!">Login</a></span>
+                    <div class="header_right_sign_up">
+                        <a href="#!" class="header_right_button">Sign up</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header_border_bottom">
+            </div>
+        </div>
+    </header>
+    <!-- Header end -->
+    
+    <main class="main">
+        <div class="wrapper">
+            <div class="map" id="map">
+                <div class="map_container">
+                    <div class="map_contact_card">
+                        <div class="map_contact_card_top">
+                            <img src="./img/map/face.png" alt="face">
+                            <p>David Smith</p>
+                            <p>Food Rider</p>
+                        </div>
+                        <div class="map_contact_card_bottom">
+                            <div>
+                                <div class="map_contact_card_bottom_1">
+                                    <img src="./img/map/Locatin.png" alt="location">
+                                    <div class="map_contact_card_bottom_2">
+                                        <span>Your Address</span>
+                                        <span>Horizenal Road Stree 1178 California, USA</span>
+                                    </div>
+                                </div>
+                                <div class="map_contact_card_bottom_3">
+                                    <img src="./img/map/Time.png" alt="location">
+                                    <div class="map_contact_card_bottom_4">
+                                        <span>Delivery Time</span>
+                                        <span>15 Minutes</span>
+                                    </div>
+                                    <input type="button" value="pending">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="review_payement" id="review">
+                <div>
+                    <div class="review_payement_wrap">
+                        <div class="review_payement_item1">
+                            <div>
+                                <img src="./img/map/review_payement_food1.png" alt="food1">
+                            </div>
+                            <div>
+                                <span>Chicken Hell</span>
+                                <span>$12.99</span>
+                            </div>
+                            <div>
+                                <div>
+                                    <span>03</span>
+                                </div>
+                                <span>$38.97</span>
+                            </div>
+                            <img src="./img/map/review_payementIlllustration.png" alt="illustration">
+                        </div>
+                        <div class="review_payement_item2">
+                            <div>
+                                <img src="./img/map/review_payement_food2.png" alt="food1">
+                            </div>
+                            <div>
+                                <span>Chicken Hell</span>
+                                <span>$19.99</span>
+                            </div>
+                            <div>
+                                <div>
+                                    <span>01</span>
+                                </div>
+                                <span>$19.99</span>
+                            </div>
+                        </div>
+                        <div class="review_payement_coupon">
+                            <div>
+                                <img src="./img/map/review_payement_coupon.png" alt="coupon">
+                                <span>Apply Coupon</span>
+                            </div>
+                            <input type="button" value="Apply">
+                        </div>
+                        <div class="review_payement_sub">
+                            <div>
+                                <span>Subtotal</span>
+                                <span>$58.96</span>
+                            </div>
+                            <div></div>
+                        </div>
+                        <div class="review_payement_sub">
+                            <div>
+                                <span>Delivery</span>
+                                <span>$3.59</span>
+                            </div>
+                            <div></div>
+                        </div>
+                        <div class="review_payement_total">
+                            <span>Total</span>
+                            <span>$62.55</span>
+                        </div>
+                        <div class="review_payement_review">
+                            <input type="botton" value="Review Payment">
+                            <img src="./img/map/review_payementArrowright.png" alt="arrow">
+                            <img src="./img/map/review_payementArrowright.png" alt="arrow">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--subscribe start-->
+            <div class="subscribe_wrapper" id="contacts">
+                <div class="subscribe_wrap">
+    
+                    <div class="subscribe_left_block">
+                        <h1 class="subscribe_left_block_title">GET 50%</h1>
+                        <div class="subscribe_left_email_wrap">
+                            <p class="subscribe_left_email_text"> Enter Your Email Address</p>
+                            <a href="#!" class="subscribe_right_wrap_link">
+                                <div class="subscribe_right_wrap">
+                                    <p class="subscribe_right_wrap_text">subscribe</p>
+                                </div>
+                            </a>
+                        </div>
+    
+                    </div>
+                    <div class="subscribe_right_block">
+                        <img src="./img/subscribe_right_block_img.png" alt="subscribe_right_block_img"
+                            class="subscribe_right_block_img">
+                    </div>
+    
+                </div>
+            </div>
+            <!--subscribe end-->
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="wrapper wrapper_color">
+                <div class="footer_wrap_top">
+                    <div class="footer_left">
+                        <div class="footer_left_img_container">
+                            <img src="./img/svg/footer_left_img_container_thumb.svg" alt="footer_left_img_container_thumb"
+                                class="footer_left_img_container_thumb">
+                        </div>
+                        <span class="footer_left_text">eatly</span>
+                    </div>
+                    <div class="footer_right">
+                        <span class="footer_right_span_01">Blog</span>
+                        <span class="footer_right_span_02">Pricing</span>
+                        <span class="footer_right_span_03">About Us</span>
+                        <span class="footer_right_span_04">Contact</span>
+                    </div>
+                </div>
+                <div class="footer_wrap_bottom">
+                    <div class="footer_wrap_bottom_left">
+                        <p>© 2023 EATLY All Rights Reserved.</p>
+                    </div>
+                    <div class="footer_wrap_bottom_right">
+                        <img src="./img/svg/footer_wrap_bottom_right_socials.svg" alt="socials">
+                    </div>
+                </div>
+        </div>
+    </footer>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+        <script src="./JS/main.js"></script>
+</body>
+
+</html>

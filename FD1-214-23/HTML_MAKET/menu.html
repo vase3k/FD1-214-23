@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eatly</title>
+    <title>eatly menu</title>
     <meta name="description" content="" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -17,7 +17,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_menu.css">
     <link rel="stylesheet" href="css/style_fonts.css">
 </head>
 
@@ -33,10 +33,11 @@
                     </div>
                     <span class="header_left_title">eatly</span>
                     <div class="header_middle">
-                        <span><a href="#top_restaurant" class="js-scroll">Menu</a></span>
-                        <span><a href="#blog" class="js-scroll">Blog</a></span>
-                        <span><a href="#prices" class="js-scroll">Pricing</a></span>
-                        <span><a href="#contacts" class="js-scroll">Contact</a></span>
+                        <span><a href="index.html" class="js-scroll">Home</a></span>
+                        <span><a href="map.html" class="js-scroll">Map</a></span>
+                        <span><a href="#special" class="js-scroll">Special</a></span>
+                        <span><a href="#Top_restaurant" class="js-scroll">Top restaurant</a></span>
+                        <span><a href="#prices" class="js-scroll">Prices</a></span>
                     </div>
                 </div>
                 <div class="header_right">
@@ -50,56 +51,258 @@
             </div>
         </div>
     </header>
-
     <!-- Header end -->
     
     <main class="main">
-        <div class="special_wrapper">
-            <div></div>
-            <div class="subscribe_wrap_02">
-                <div class="subscribe_left_block">
-                    <h1 class="subscribe_left_block_title">GET 50%</h1>
-                    <h2>WEEKENDS</h2>
-                </div>
-                <div class="subscribe_right_block">
-                    <img src="./img/subscribe_right_block_img.png" alt="subscribe_right_block_img"
-                        class="subscribe_right_block_img">
-                </div>
+        <div class="wrapper">
+            <!-- special start -->
+            <div class="special_wrapper" id="special">
+                <div class="special_block_left">
         
+                    <div class="special_caroucel_container">
+                        <img src="./img/special_caroucel_container_50banner.png" alt="caroucel_container"
+                            class="special_caroucel_container_img">
+                        <img class="special_caroucel_container_corner" src="./img/special_caroucel_container_corner.png"
+                            alt="caroucel_container_corner">
+                        <img src="./img/special_caroucel_container_slider_line.png" alt="caroucel_slider"
+                            class="special_caroucel_container_slider">
+                    </div>
+        
+                    <input class="special_search__container" type="search" name="special_search__container"
+                        placeholder="Search">
+        
+                    <div class="special_select_restorent">
+                        <div class="special_select_restorent_left">
+                            <div>Resturent</div>
+                        </div>
+                        <div class="special_select_restorent_right">
+                            <div>Food</div>
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="special_block_right">
+                    <h1 class="special_block_right_title">Category</h1>
+                    <div class="special_block_right_buttons">
+                        <div><img src="./img/svg/special_block_right_Pizza.svg" alt="Pizza">
+                            <p>Pizza</p>
+                        </div>
+                        <div><img src="./img/svg/special_block_right_Hotdog.svg" alt="Asian">
+                            <p>Asian</p>
+                        </div>
+                        <div><img src="./img/svg/special_block_right_donaut.svg" alt="Donat">
+                            <p>Donat</p>
+                        </div>
+                        <div><img src="./img/svg/special_block_right_Icecream.svg" alt="Ice">
+                            <p>Ice</p>
+                        </div>
+                    </div>
+                    <p class="special_block_right_sortby">Sort By</p>
+                    <div class="special_block_right_sortby_wrap">
+                        <span>Recomended</span>
+                        <span>Fast Delivery</span>
+                        <span>Most Popular</span>
+                    </div>
+                    <p class="special_block_right_price">Price</p>
+                    <input class="special_block_right_range" type="range" name="Price" step="6" value="10" min="0" max="1000"
+                        required>
+                    <div class="special_block_right_range_legend">
+                        <span>$0</span>
+                        <span>$25</span>
+                        <span>$50</span>
+                        <span>$100</span>
+                        <span>$500</span>
+                        <span>$1000</span>
+                    </div>
+                    <input class="special_block_right_apply" type="button" value="apply">
+                </div>
             </div>
+            <!-- special end -->
+            <!-- top Restaurants start -->
+            <div class="top_restaurants_wrapper" id="Top_restaurant">
+                <h1 class="top_restaurants_wrapper_title">Our Top
+                    <span>Restaurants</span>
+                </h1>
+                <div class="top_restaurants_cards">
+                    <div class="top_restaurant_card top_restaurant_card_01">
+                        <img src="img/top_restaurant_card_01.jpg" alt="top_restaurant_card">
+                        <div class="top_restaurant_card_desc">
+                            <h3>Healthy</h3>
+                            <p>The Chicken King</p>
+                            <span>24min •</span>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="top_restaurant_card top_restaurant_card_02">
+                        <img src="img/top_restaurant_card_02.jpg" alt="top_restaurant_card">
+                        <div class="top_restaurant_card_desc">
+                            <h3>Trending</h3>
+                            <p>The Burger King</p>
+                            <span>24min •</span>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                    <div class="top_restaurant_card top_restaurant_card_01">
+                        <img src="img/top_restaurant_card_01.jpg" alt="top_restaurant_card">
+                        <div class="top_restaurant_card_desc">
+                            <h3>Healthy</h3>
+                            <p>The Chicken King</p>
+                            <span>24min •</span>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="top_restaurants_buttom">
+                    <p>View All</p>
+                </div>
+                <div class="top_restaurants_border_bottom">
+                </div>
+            </div>
+            <!-- top Restaurants end -->
+            <!--top dishes start-->
+            <div class="top_diches_wrapper" id="prices">
+                <h1 class="top_diches_wrapper_title">Our Top
+                    <span>Dishes</span>
+                </h1>
+                <div class="top_diches_cards">
+                    <div class="top_diches_card">
+                        <img src="img/svg/top_diches_card_heart.svg" alt="top_diches_card_heart">
+                        <div class="top_diches_card_container">
+                            <img src="img/top_diches_card_01.jpg" alt="top_diches_card">
+                        </div>
+                        <div class="top_diches_card_desc">
+                            <h3 class="top_diches_card_desc_trending_01">Healthy</h3>
+                            <p>Chicken Hell</p>
+                            <span class="top_diches_card_desc_min">24min •</span>
+                            <span class="top_diches_card_desc_score">4.8</span>
+                            <p class="top_diches_card_desc_dollar">$12<span class="top_diches_card_desc_cents">.99</span></p>
+                        </div>
+                    </div>
+                    <div class="top_diches_card">
+                        <img src="img/svg/top_diches_card_heart.svg" alt="top_diches_card_heart">
+                        <div class="top_diches_card_container">
+                            <img src="img/top_diches_card_02.jpg" alt="top_diches_card">
+                        </div>
+                        <div class="top_diches_card_desc">
+                            <h3 class="top_diches_card_desc_trending_02">Trending</h3>
+                            <p>Swe Dish</p>
+                            <span class="top_diches_card_desc_min">34min •</span>
+                            <span class="top_diches_card_desc_score">4.9</span>
+                            <p class="top_diches_card_desc_dollar">$19<span class="top_diches_card_desc_cents">.99</span></p>
+                        </div>
+                    </div>
+                    <div class="top_diches_card">
+                        <img src="img/svg/top_diches_card_heart.svg" alt="top_diches_card_heart">
+                        <div class="top_diches_card_container">
+                            <img src="img/top_diches_card_03.jpg" alt="top_diches_card">
+                        </div>
+                        <div class="top_diches_card_desc">
+                            <h3 class="top_diches_card_desc_trending_03">Supreme</h3>
+                            <p>Chicken Hell</p>
+                            <span class="top_diches_card_desc_min">24min •</span>
+                            <span class="top_diches_card_desc_score">4.8</span>
+                            <p class="top_diches_card_desc_dollar">$12<span class="top_diches_card_desc_cents">.99</span></p>
+                        </div>
+                    </div>
+                    <div class="top_diches_card">
+                        <img src="img/svg/top_diches_card_heart.svg" alt="top_diches_card_heart">
+                        <div class="top_diches_card_container">
+                            <img src="img/top_diches_card_01.jpg" alt="top_diches_card">
+                        </div>
+                        <div class="top_diches_card_desc">
+                            <h3 class="top_diches_card_desc_trending_01">Healthy</h3>
+                            <p>Chicken Hell</p>
+                            <span class="top_diches_card_desc_min">24min •</span>
+                            <span class="top_diches_card_desc_score">4.8</span>
+                            <p class="top_diches_card_desc_dollar">$12<span class="top_diches_card_desc_cents">.99</span></p>
+                        </div>
+                    </div>
+                    <div class="top_diches_card">
+                        <img src="img/svg/top_diches_card_heart.svg" alt="top_diches_card_heart">
+                        <div class="top_diches_card_container">
+                            <img src="img/top_diches_card_02.jpg" alt="top_diches_card">
+                        </div>
+                        <div class="top_diches_card_desc">
+                            <h3 class="top_diches_card_desc_trending_02">Healthy</h3>
+                            <p>Chicken Hell</p>
+                            <span class="top_diches_card_desc_min">24min •</span>
+                            <span class="top_diches_card_desc_score">4.8</span>
+                            <p class="top_diches_card_desc_dollar">$12<span class="top_diches_card_desc_cents">.99</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="top_diches_buttom">
+                    <p class="top_diches_buttom_text">View All</p>
+                </div>
+                <div class="top_diches_border_bottom">
+                </div>
+            </div>
+            <!--top dishes end-->
+            <!-- FAQ start -->
+            <div class="faq_wrapper">
+                <div class="faq_container_top">
+                    <img src="./img/special_caroucel_container_corner.png" alt="corner">
+                    <h1 class="faq_title">Frequently Asked 
+                        <span>Questions</span></h1>
+                </div>
+                <div class="faq_container">
+                    <div class="faq_container_box">
+                        <span class="faq_container_question">How long does delivery take?</span>
+                        <img class="faq_container_plus" src="./img/svg/faq_container_plus.svg" alt="plus">
+                    </div>
+                    <div class="faq_container_box">
+                        <span class="faq_container_question">How Does It Work ?</span>
+                        <img class="faq_container_plus" src="./img/svg/faq_container_plus.svg" alt="plus">
+                    </div>
+                    <div class="faq_container_box">
+                        <span class="faq_container_question">How does your food delivery service work?</span>
+                        <img class="faq_container_plus" src="./img/svg/faq_container_plus.svg" alt="plus">
+                    </div>
+                    <div class="faq_container_box">
+                        <span class="faq_container_question">What payment options do you accept?</span>
+                        <img class="faq_container_plus" src="./img/svg/faq_container_plus.svg" alt="plus">
+                    </div>
+                    <div class="faq_container_box">
+                        <span class="faq_container_question">Do you offer discounts or promotions?</span>
+                        <img class="faq_container_plus" src="./img/svg/faq_container_plus.svg" alt="plus">
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- FAQ end -->
         </div>
     </main>
 
-    <!--Footer start-->
     <footer class="footer">
-        <div class="footer_wrapper">
-            <div class="footer_wrap_top">
-                <div class="footer_left">
-                    <div class="footer_left_img_container">
-                        <img src="./img/svg/footer_left_img_container_thumb.svg" alt="footer_left_img_container_thumb"
-                            class="footer_left_img_container_thumb">
+        <div class="wrapper wrapper_color">
+                <div class="footer_wrap_top">
+                    <div class="footer_left">
+                        <div class="footer_left_img_container">
+                            <img src="./img/svg/footer_left_img_container_thumb.svg" alt="footer_left_img_container_thumb"
+                                class="footer_left_img_container_thumb">
+                        </div>
+                        <span class="footer_left_text">eatly</span>
                     </div>
-                    <span class="footer_left_text">eatly</span>
+                    <div class="footer_right">
+                        <span class="footer_right_span_01">Blog</span>
+                        <span class="footer_right_span_02">Pricing</span>
+                        <span class="footer_right_span_03">About Us</span>
+                        <span class="footer_right_span_04">Contact</span>
+                    </div>
                 </div>
-                <div class="footer_right">
-                    <span class="footer_right_span_01">Blog</span>
-                    <span class="footer_right_span_02">Pricing</span>
-                    <span class="footer_right_span_03">About Us</span>
-                    <span class="footer_right_span_04">Contact</span>
+                <div class="footer_wrap_bottom">
+                    <div class="footer_wrap_bottom_left">
+                        <p>© 2023 EATLY All Rights Reserved.</p>
+                    </div>
+                    <div class="footer_wrap_bottom_right">
+                        <img src="./img/svg/footer_wrap_bottom_right_socials.svg" alt="socials">
+                    </div>
                 </div>
-            </div>
-            <div class="footer_wrap_bottom">
-                <div class="footer_wrap_bottom_left">
-                    <p>© 2023 EATLY All Rights Reserved.</p>
-                </div>
-                <div class="footer_wrap_bottom_right">
-                    <img src="./img/svg/footer_wrap_bottom_right_socials.svg" alt="socials">
-                </div>
-            </div>
         </div>
-        <!--Footer end-->
-
     </footer>
+
+    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
