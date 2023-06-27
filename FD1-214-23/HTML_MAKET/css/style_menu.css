@@ -288,6 +288,10 @@ a {
     transition: 0.2s;
 }
 
+.special_block_right_buttons > div > p {
+    margin-bottom: 10px;
+}
+
 .special_block_right_sortby_wrap > span:nth-child(2) {
     text-align: end;
     color: var(--purple, #6C5FBC);
