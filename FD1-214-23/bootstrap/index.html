@@ -4,17 +4,309 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>bootstrap training</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-        <link rel="stylesheet" href="../maket_flex_2/CSS/reset.css">
+    <script src="https://kit.fontawesome.com/8055ad0b31.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus inventore delectus repellendus magni
-        praesentium neque autem eaque alias illo quia quasi, rerum maiores iure molestias quibusdam! Perspiciatis ipsam
-        fuga enim!</p>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Консервы</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 top-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Откуда</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Типы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Свинина</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Говядина</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Гречка</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><i class="fa-solid fa-user"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
+                            <li><a class="dropdown-item active" href="#">Регистрация</a></li>
+                            <li><a class="dropdown-item" href="#">Авторизация</a></li>
+                          </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="#" data-bs-toggle="modal" data-bs-target="#modal-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </a>
+                        <!-- модальное окно -->
+                        <div class="modal fade" id="modal-cart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                              <div class="modal-content">
+                                <div class="modal-header bg-secondary text-white">
+                                  <h1 class="modal-title fs-5" id="exampleModalLabel">Корзина</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <table class="table">
+                                        <tbody>
+                                          <tr>
+                                            <td><img src="../HTML_MAKET/img/top_diches_card_01.jpg" alt="dish"></td>
+                                            <td><a href="">top dish</a></td>
+                                            <td>29.99$ plus tax</td>
+                                          </tr>
+                                          <tr>
+                                            <td><img src="../HTML_MAKET/img/top_diches_card_01.jpg" alt="dish"></td>
+                                            <td><a href="">second dish</a></td>
+                                            <td>19.99$ plus tax</td>
+                                          </tr>
+                                          <tr>
+                                            <td><img src="../HTML_MAKET/img/top_diches_card_01.jpg" alt="dish"></td>
+                                            <td><a href="">third dish</a></td>
+                                            <td>10.99$ plus tax</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- модальное окно -->
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid my-carousel">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./slider-1.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./slider-2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./slider-3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+
+    <section class="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-3">
+                    <div class="product-card">
+                        <div class="product-thumb">
+                            <a href="https://apple.com"><img src="./slider-1.jpeg" alt="iphone14"></a>
+                        </div>
+                        <div class="product-details">
+                            <h4><a href="https://trustore.by/iphone-14.html?yclid=16205559099165245439" target="_blank">Link</a></h4>
+                            <p>Цена с учетом курса доллара приемлема, не везде можно платить по QR код, но карту берешь с собой и проблема</p>
+                            <div class="product-buttom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>$230.99</small> $99
+                                </div>
+                                <div class="product-links">
+                                    <a href="#!"><i class="fa-solid fa-mobile-screen-button fa-bounce"></i></a>
+                                    <a href="#!"><i class="fa-solid fa-heart fa-shake"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-3">
+                    <div class="product-card">
+                        <div class="product-thumb">
+                            <a href="https://apple.com"><img src="./slider-2.jpg" alt="iphone14"></a>
+                        </div>
+                        <div class="product-details">
+                            <h4><a href="https://trustore.by/iphone-14.html?yclid=16205559099165245439" target="_blank">Link</a></h4>
+                            <p>Цена с учетом курса доллара приемлема, не везде можно платить по QR код, но карту берешь с собой и проблема</p>
+                            <div class="product-buttom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>$230.99</small> $99
+                                </div>
+                                <div class="product-links">
+                                    <a href="#!"><i class="fa-solid fa-mobile-screen-button fa-bounce"></i></a>
+                                    <a href="#!"><i class="fa-solid fa-heart fa-shake"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-3">
+                    <div class="product-card">
+                        <div class="product-thumb">
+                            <a href="https://apple.com"><img src="./slider-3.jpg" alt="iphone14"></a>
+                        </div>
+                        <div class="product-details">
+                            <h4><a href="https://trustore.by/iphone-14.html?yclid=16205559099165245439" target="_blank">Link</a></h4>
+                            <p>Цена с учетом курса доллара приемлема, не везде можно платить по QR код, но карту берешь с собой и проблема</p>
+                            <div class="product-buttom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>$230.99</small> $99
+                                </div>
+                                <div class="product-links">
+                                    <a href="#!"><i class="fa-solid fa-mobile-screen-button fa-bounce"></i></a>
+                                    <a href="#!"><i class="fa-solid fa-heart fa-shake"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-3">
+                    <div class="product-card">
+                        <div class="product-thumb">
+                            <a href="https://apple.com"><img src="./slider-1.jpeg" alt="iphone14"></a>
+                        </div>
+                        <div class="product-details">
+                            <h4><a href="https://trustore.by/iphone-14.html?yclid=16205559099165245439" target="_blank">Link</a></h4>
+                            <p>Цена с учетом курса доллара приемлема, не везде можно платить по QR код, но карту берешь с собой и проблема</p>
+                            <div class="product-buttom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>$230.99</small> $99
+                                </div>
+                                <div class="product-links">
+                                    <a href="#!"><i class="fa-solid fa-mobile-screen-button fa-bounce"></i></a>
+                                    <a href="#!"><i class="fa-solid fa-heart fa-shake"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-3">
+                    <div class="product-card">
+                        <div class="product-thumb">
+                            <a href="https://apple.com"><img src="./slider-2.jpg" alt="iphone14"></a>
+                        </div>
+                        <div class="product-details">
+                            <h4><a href="https://trustore.by/iphone-14.html?yclid=16205559099165245439" target="_blank">Link</a></h4>
+                            <p>Цена с учетом курса доллара приемлема, не везде можно платить по QR код, но карту берешь с собой и проблема</p>
+                            <div class="product-buttom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>$230.99</small> $99
+                                </div>
+                                <div class="product-links">
+                                    <a href="#!"><i class="fa-solid fa-mobile-screen-button fa-bounce"></i></a>
+                                    <a href="#!"><i class="fa-solid fa-heart fa-shake"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="product-card">
+                        <div class="product-thumb">
+                            <a href="https://apple.com"><img src="./slider-3.jpg" alt="iphone14"></a>
+                        </div>
+                        <div class="product-details">
+                            <h4><a href="https://trustore.by/iphone-14.html?yclid=16205559099165245439" target="_blank">Link</a></h4>
+                            <p>Цена с учетом курса доллара приемлема, не везде можно платить по QR код, но карту берешь с собой и проблема</p>
+                            <div class="product-buttom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>$230.99</small> $99
+                                </div>
+                                <div class="product-links">
+                                    <a href="#!"><i class="fa-solid fa-mobile-screen-button fa-bounce"></i></a>
+                                    <a href="#!"><i class="fa-solid fa-heart fa-shake"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <h4>Информация</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#!">Главная</a></li>
+                            <li><a href="#!">О магазине</a></li>
+                            <li><a href="#!">Оплата и доставка</a></li>
+                            <li><a href="#!">Главная</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <h4>Время работы</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="https://www.tsum.by/">Tsum</a></li>
+                            <li>9:00 до 21:00 <br>
+                                Без выходных</li>
+                            <li>Пн-Сб 09:00-22:00 <br>
+                                Вс 10:00-21:00</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <h4>Телефоны</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#!"><i class="fa-solid fa-phone"></i> +375 25 760-00-05</a></li>
+                            <li><a href="#!"><i class="fa-solid fa-phone-volume"></i> +375 29 760-00-35</a></li>
+                            <li><a href="#!"><i class="fa-solid fa-mobile"></i> +375 25 760-00-05</a></li>
+                            <li><a href="#!"><i class="fa-solid fa-at"></i></i> ishop@tsum.by</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <h4>Мы в сети</h4>
+                        <div class="footer-icons">
+                            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube fa-fade"></i></a>
+                            <a href="https://vk.com/"><i class="fa-brands fa-vk"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/explore?"><i class="fa-brands fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
