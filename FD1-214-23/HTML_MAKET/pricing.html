@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eatly menu</title>
+    <meta name="description" content="" />
+    <!-- bootstrap style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!-- my style -->
+    <link rel="stylesheet" href="css/style_prices.css">
+    <link rel="stylesheet" href="css/style_fonts.css">
+    <!-- https://www.figma.com/file/jHDVsiVR8JBpkMsYehKCEj/Eatly?type=design&node-id=1-11265&t=WB0XBAdDpl2xkEdo-0 -->
+</head>
+
+<body>
+    <!--header start-->
+    <header class="header fixed-top px-3">
+        <div class="wrapper">
+            <div class="header_wrapper d-flex justify-content-between align-items-center">
+                <div class="header_left d-flex justify-content-between align-items-center">
+                    <div class="header_logo flex-shrink-0">
+                        <img src="img/svg/header_left_logo.svg" alt="eatly_logo" class="header_left_thumb">
+                    </div>
+                    <span class="header_left_title">eatly</span>
+                    <div class="header_middle d-flex justify-content-between flex-shrink-0">
+                        <span><a href="index.html" class="js-scroll">Home</a></span>
+                        <span><a href="menu.html" class="js-scroll ps-2">Menu</a></span>
+                        <span><a href="map.html" class="js-scroll px-2">Map</a></span>
+                        <span><a href="#prices" class="js-scroll">Prices</a></span>
+                    </div>
+                </div>
+                <div class="header_right d-flex align-items-center flex-shrink-0">
+                    <span class="header_right_login"><a href="#!">Login</a></span>
+                    <div class="header_right_sign_up">
+                        <a href="#!" class="header_right_button">Sign up</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header_border_bottom">
+            </div>
+        </div>
+    </header>
+    <!-- Header end -->
+   
+    <main class="main">
+        <div class="wrapper">
+            <div class="Pricing container-fluid">
+                <div class="mx-auto">
+                    <h1>Our Pricing</h1>
+                </div>
+                
+                <div class="pricing_dashboard mx-auto position-relative">
+                    <img src="./img/pricing/17-Home V1 1.png" alt="dashboard">
+                    <img src="./img/pricing/01.png" alt="right_corner" class="position-absolute w-auto">
+                    <img src="./img/pricing/02.png" alt="left_corner" class="position-absolute w-auto">
+                </div>
+            </div>
+            <!-- pricing end -->
+            <div class="prices container-fluid" id="prices">
+                <div class="container text-left">
+                    <div class="row">
+                      <div class="col">
+                        <h2>Pricing</h2>
+                      </div>
+                      <div class="col">
+                        <h2>Basic</h2>
+                      </div>
+                      <div class="col">
+                        <h2>Premium</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container text-left">
+                    <div class="row">
+                      <div class="col">
+                        <p>Affordable Basic & Pro Plans</p>
+                      </div>
+                      <div class="col">
+                        <p>Completely 100% Free Plan</p>
+                      </div>
+                      <div class="col">
+                        <p>Amazing Premium Features Plan</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container text-left">
+                    <div class="row">
+                      <div class="col">
+                      </div>
+                      <div class="col">
+                        <span>$</span>
+                        <span>0</span>
+                        <span> /month</span> 
+                      </div>
+                      <div class="col">
+                        <span>$</span>
+                        <span>5</span>
+                        <span> /month</span> 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container text-left">
+                    <div class="row">
+                      <div class="col">
+                        Core features
+                      </div>
+                      <div class="col">
+                      </div>
+                      <div class="col">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container text-left">
+                    <div class="row">
+                      <div class="col">
+                        Support 24/7
+                      </div>
+                      <div class="col">
+                        <div class="prices_button">
+                            <input type="checkbox" id="button" name="food">
+                            <label for="button"></label>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="prices_button">
+                            <input type="checkbox" id="button1" name="food">
+                            <label for="button1"></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container text-left">
+                    <div class="row">
+                      <div class="col">
+                        Fast Delivery
+                      </div>
+                      <div class="col">
+                        <div class="prices_button">
+                            <input type="checkbox" id="button2" name="food">
+                            <label for="button2"></label>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="prices_button">
+                            <input type="checkbox" id="button3" name="food">
+                            <label for="button3"></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container text-left">
+                    <div class="row">
+                      <div class="col">
+                        20% Off Food Deals
+                      </div>
+                      <div class="col">
+                        <div class="prices_button">
+                            <input type="checkbox" id="button4" name="food">
+                            <label for="button4"></label>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="prices_button">
+                            <input type="checkbox" id="button5" name="food">
+                            <label for="button5"></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container text-left">
+                    <div class="row">
+                      <div class="col">
+                        Transaction History
+                      </div>
+                      <div class="col">
+                        <div class="prices_button">
+                            <input type="checkbox" id="button6" name="food">
+                            <label for="button6"></label>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="prices_button">
+                            <input type="checkbox" id="button7" name="food">
+                            <label for="button7"></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container text-left">
+                    <div class="row">
+                      <div class="col">
+                        Weekend Deals
+                      </div>
+                      <div class="col">
+                        <div class="prices_button">
+                            <input type="checkbox" id="button8" name="food">
+                            <label for="button8"></label>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="prices_button">
+                            <input type="checkbox" id="button9" name="food">
+                            <label for="button9"></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container text-left">
+                    <div class="row">
+                      <div class="col">
+                        Dashboard Access
+                      </div>
+                      <div class="col">
+                        <div class="prices_button">
+                            <input type="checkbox" id="button10" name="food">
+                            <label for="button10"></label>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="prices_button">
+                            <input type="checkbox" id="button11" name="food">
+                            <label for="button11"></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container text-left">
+                    <div class="row">
+                      <div class="col">
+                      </div>
+                      <div class="col">
+                        <input type="button" value="start free">
+                      </div>
+                      <div class="col">
+                        <input type="button" value="start Pro">
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+        </div>
+    </main>
+
+
+
+    <!-- footer start-->
+    <footer class="footer px-3">
+        <div class="wrapper wrapper_color">
+                <div class="footer_wrap_top d-flex justify-content-between align-items-center">
+                    <div class="footer_left d-flex justify-content-between align-items-center flex-grow-1">
+                        <div class="footer_left_img_container flex-shrink-0">
+                            <img src="./img/svg/footer_left_img_container_thumb.svg" alt="footer_left_img_container_thumb"
+                                class="footer_left_img_container_thumb">
+                        </div>
+                        <span class="footer_left_text">eatly</span>
+                    </div>
+                    <div class="footer_right d-flex justify-content-between align-items-center flex-grow-1">
+                        <span class="footer_right_span_01">Blog</span>
+                        <span class="footer_right_span_02">Pricing</span>
+                        <span class="footer_right_span_03">About Us</span>
+                        <span class="footer_right_span_04">Contact</span>
+                    </div>
+                </div>
+                <div class="footer_wrap_bottom d-flex justify-content-between align-items-center">
+                    <div class="footer_wrap_bottom_left">
+                        <span>© 2023 EATLY All Rights Reserved.</span>
+                    </div>
+                    <div class="footer_wrap_bottom_right">
+                        <img src="./img/svg/footer_wrap_bottom_right_socials.svg" alt="socials">
+                    </div>
+                </div>
+        </div>
+    </footer>
+    <!-- footer end-->
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>
