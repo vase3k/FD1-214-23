@@ -47,6 +47,10 @@ a:hover {
     left: auto;
 }
 
+.navbar .carousel-logo {
+    width: 50px;
+}
+
 .top-menu li a::after {
     content: "";
     display: block;
