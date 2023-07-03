@@ -1,0 +1,40 @@
+@mixin flexCenter($direction, $color) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: $direction;
+    background-color: $color; 
+}
+
+@import "./reset";
+@import "./var";
+
+.wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@import "./header.scss";
+
+.main {
+    .content {
+        @include flexCenter(column, blue);
+        div:first-child {
+            height: 500px;
+            margin: 0 auto;
+            background: url(img/sm.17.800.jpg) center center no-repeat;
+            background-size: cover;
+            &:hover {
+                background-size: 110%;
+            }
+        }
+    }
+}
+
+.banner {
+    @extend .wrapper;
+    max-width: (900px - 20px)/2;
+}

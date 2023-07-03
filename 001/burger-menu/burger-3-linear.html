@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger linear</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: beige;
+            font-family: monospace;
+            color: midnightblue;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .title {
+            width: 100%;
+            text-align: center;
+            margin: 25px 0;
+        }
+
+        .burger{
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            background: linear-gradient(to bottom, black 20%, transparent 21%, transparent 40%, black 41%, black 60%, transparent 61%, transparent 80%, black 81%)
+        }
+
+        .burger_active {
+            background: linear-gradient(45deg, transparent 45%, black 46%, black 55%, transparent 56%),
+            linear-gradient(-45deg, transparent 45%, black 46%, black 55%, transparent 56%);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="title">Создание бургер меню с использованием линейного заполнения</h1>
+
+        <div class="burger"></div>
+    </div>
+    <script>
+        (function () {
+            const burger = document.querySelector('.burger');
+            burger.addEventListener('click', function () {
+                burger.classList.toggle('burger_active');
+            });
+        })();
+    </script>
+    </body>
+</html>
