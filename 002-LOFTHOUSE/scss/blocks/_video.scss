@@ -1,0 +1,30 @@
+.video {
+    text-align: center;
+
+    &__link {
+        position: relative;
+        display: inline-block;
+    }
+
+    &__icon {
+        z-index: 2;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.2s ease-in;
+    }
+
+    .video__link:hover .video__icon {
+        transform: translate(-50%, -50%) scale(1.2);
+        filter: saturate(1.5);
+    }
+
+    &__img {
+
+        &:hover {
+            filter: brightness(105%);
+            transition: all 0.2s ease-in;
+        }
+    }
+}
