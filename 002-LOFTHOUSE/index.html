@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LoftHouse</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./js/libs/youtubeLightbox/youtubeLightbox.css">
     <!-- https://www.figma.com/file/69nIOtIXNTav3FxvlQ7jLm/Loft-House---Квартиры?node-id=0%3A1&mode=dev -->
     <!-- https://webcademy.ru/blog/994/ -->
 </head>
@@ -27,6 +28,11 @@
                                 <li><a href="#!">Контакты</a></li>
                             </ul>
                         </nav>
+                    </div>
+                    <div class="header__nav-btn">
+                        <button class="nav-icon-btn">
+                            <div class="nav-icon"></div>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -51,7 +57,7 @@
     </header>
 
     <main>
-        <section class="benefits none">
+        <section class="benefits">
             <h2 class="visually-hidden">преимущества ЖК</h2>
 
             <div class="container container--sm">
@@ -80,7 +86,7 @@
             </div>
         </section>
 
-        <section class="appartments  none">
+        <section class="appartments">
             <div class="container">
                 <div class="appartments__title"> 
                     <h2 class="title-2">Наши квартиры</h2>
@@ -111,7 +117,7 @@
             </div>
         </section>
 
-        <section class="cta  none">
+        <section class="cta">
             <div class="container">
                 <div class="cta__title">
                     <h2 class="title-2">Хотите посмотреть?</h2>
@@ -130,8 +136,9 @@
 
                     <form action="" class="cta__form form">
                         <input type="text" class="form__input" placeholder="Ваше имя" autocomplete="off">
-                        <input type="text" class="form__input" placeholder="Ваш телефон" autocomplete="off">
-                        <p class="form__privacy">
+                        <input data-tel-input type="text" class="form__input" placeholder="Ваш телефон" autocomplete="off">
+
+                        <p class="form__privacy form__privacy--bottom">
                             *Мы никому не передаем ваши данные. <br>
                             И не сохраняем ваш номер в базу.
                         </p>
@@ -142,48 +149,48 @@
             </div>
         </section>
 
-        <section class="video  none">
+        <section class="video">
             <h2 class="visually-hidden">видео про жк loft house</h2>
             <div class="container">
 
-                <a href="https://youtu.be/VQGamnI1FTM" class="video__link">
+                <a href="https://youtu.be/VQGamnI1FTM" data-youtubeLightbox class="video__link">
                     <img src="./img/video/play.svg" alt="play" class="video__icon">
                     <img src="./img/video/video-img.jpg" alt="video" class="video__img">
                 </a>
             </div>
         </section>
 
-        <section class="section-map  none">
+        <section class="section-map">
             <div class="container">
                 <div class="section-map__title">
                     <h2 class="title-2">Район на карте</h2>
                 </div>
                 <div class="section-map__map">
-                    <div class="map" id="map">map</div>
+                    <div class="map" id="map"></div>
                 </div>
 
             </div>
         </section>
 
-        <section class="feedback  none">
+        <section class="feedback">
             <div class="container">
                 <div class="feedback__title">
                     <h2 class="title-2">Есть вопросы?</h2>
                 </div>
                 <div class="feedback__form form">
-                    <p class="form__privacy">
+                    <p class="form__privacy form__privacy--bottom">
                         *Мы никому не передаем ваши данные. <br>
                         И не сохраняем ваш номер в базу.
                     </p>
                     <input type="text" class="form__input" placeholder="Ваше имя" autocomplete="off">
-                    <input type="text" class="form__input" placeholder="Ваш телефон" autocomplete="off">
+                    <input data-tel-input type="text" class="form__input" placeholder="Ваш телефон" autocomplete="off">
 
                     <button type="submit" class="form__btn">Посмотреть район</button>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="footer  none">
+    <footer class="footer">
         <div class="container">
             <div class="footer__grid">
                 <div class="footer__logo">
@@ -230,5 +237,20 @@
             </div>
         </div>
     </footer>
+
+    <!-- YouTube LightBox -->
+    <div id="youtubelightbox" class="youtubelightbox">
+        <div class="youtubelightbox__centeredchild">
+            <div class="youtubelightbox__videowrapper">
+                <div id="youtubelightboxPlayer"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=0863dd24-b63f-477a-b4dc-a0193e946b4a
+    &lang=ru_RU" type="text/javascript"></script>
+    <script src="./js/libs/phoneMask/mask.js"></script>
+    <script src="./js/libs/phoneMask/mask_list.js"></script>
+    <script src=".//js/libs/youtubeLightbox/youtubeLightbox.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

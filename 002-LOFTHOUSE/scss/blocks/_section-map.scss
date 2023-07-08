@@ -1,13 +1,16 @@
 .section-map {
     position: relative;
     padding: 180px 0;
-        &__title {
-            margin-bottom: 88px;
-        }
 
-        &__map {
-            
+    &__title {
+        margin-bottom: 88px;
+
+        @include mediaTablet {
+             margin-bottom: 44px;
         }
+    }
+
+    &__map {}
 
     &::before {
         content: "V";
@@ -17,11 +20,14 @@
         line-height: 1.9;
         @include decorNumber;
     }
+
+    @include mediaTablet {
+         padding: 90px 0;
+    }
 }
 
 .map {
     height: 358px;
-
     background: #626262;
 
 }
