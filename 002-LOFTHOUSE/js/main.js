@@ -1,13 +1,22 @@
-/* Nav icon */
-const navBtn = document.querySelector('.nav-icon-btn');
-const navIcon = document.querySelector('.nav-icon');
-const nav = document.querySelector('.header__top-row');
-
-navBtn.onclick = function () {
-	navIcon.classList.toggle('nav-icon--active');
-	nav.classList.toggle('header__top-row--mobile');
-	document.body.classList.toggle('no-scroll');
-}
+/* burger handler */
+(function () {
+    const burgerItem = document.querySelector(".nav-icon-btn");
+    const menu = document.querySelector(".header__top-row");
+    const menuLinks = document.querySelectorAll('.header_link');
+	const navIcon = document.querySelector('.nav-icon');
+    burgerItem.addEventListener("click", () => {
+      menu.classList.toggle("header__top-row--mobile");
+	  navIcon.classList.toggle('nav-icon--active');
+    });
+    if (window.innerWidth <= 956) {
+      for (let i = 0; i < menuLinks.length; i += 1) {
+        menuLinks[i].addEventListener('click', () => {
+          menu.classList.remove("header__top-row--mobile");
+        });
+      }
+    }
+  })();
+  
 
 /* Phone mask */
 mask('[data-tel-input]')
