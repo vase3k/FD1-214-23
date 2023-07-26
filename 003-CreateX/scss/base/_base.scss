@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Regular.woff') format('woff'),
+        url('../fonts/Ubuntu-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-bold.woff') format('woff'),
+        url('../fonts/Ubuntu-bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Ubuntu-bold.woff') format('woff'),
+        url('../fonts/Ubuntu-bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Ubuntu-black.woff') format('woff'),
+        url('../fonts/Ubuntu-black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+html, body {
+    font: normal 400 16px/normal "Ubuntu", sans-serif;
+}
+
+.wrapper {
+    padding: 0 15px;
+    max-width: 1260px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.none {
+    display: none;
+}
+

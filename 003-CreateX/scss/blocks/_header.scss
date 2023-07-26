@@ -1,0 +1,66 @@
+.header {
+    background-color: $white;
+}
+.header__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 0;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.header_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 60px;
+}
+
+.header__logo {
+    width: 130px;
+}
+
+.header__contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 36px;
+}
+
+.header__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.header__links > li > a {
+    line-height: 1.6rem;
+    color: $gray-800;
+}
+
+.header__contact {
+    padding-left: 52px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.3125rem;
+    color: $gray-800;
+
+    & a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6875rem;
+    color: $gray-900;
+    }
+
+    &:nth-child(1) {
+        background: url(../../img/header/iPhone.svg) left center / 40px no-repeat;
+    }
+
+    &:nth-child(2) {
+        background: url(../../img/header/Chat.svg) left center / 40px no-repeat;
+    }
+}
